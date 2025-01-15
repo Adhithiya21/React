@@ -1,0 +1,68 @@
+body {
+    font-family: 'Sans-serif', Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  p {
+    color: #d1d1d1;
+    line-height: 1.8;
+  }
+  body {
+    cursor: none;
+  }
+  
+  .custom-cursor {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+    z-index: 9999;
+    mix-blend-mode: difference;
+  }
+  /* Custom Cursor */
+  .custom-cursor {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease-out, width 0.2s ease, height 0.2s ease;
+  }
+  
+  .custom-cursor:hover {
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Cursor Styles */
+body {
+    cursor: none;
+  }
+  
+  .custom-cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    pointer-events: none;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    mix-blend-mode: difference; /* Optional: gives a glowing effect */
+    z-index: 9999;
+  }
+  
+  .custom-cursor:hover {
+    transform: scale(1.5);
+    background-color: #ff5733; /* Color change on hover */
+  }
+  

@@ -1,0 +1,123 @@
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s ease-out;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease-out, width 0.2s ease, height 0.2s ease;
+}
+
+.custom-cursor:hover {
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Glow Button */
+.glow-button {
+  position: relative;
+  overflow: hidden;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-button:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
+}
+
+/* Animations */
+.logo-animation {
+  animation: fadeIn 1s ease-out;
+}
+
+.nav-animation button {
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.image-animation {
+  animation: fadeInRight 1s ease-out;
+}
+
+.content-animation h1, .content-animation h2, .content-animation ol, .content-animation button {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+.nosifer-regular {
+  font-family: "Nosifer", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Nosifer&display=swap');
+
+
+.goldman-bold {
+  font-family: "Goldman", serif;
+  font-weight: 700;
+  font-style: normal;
+}

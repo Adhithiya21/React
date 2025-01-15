@@ -1,0 +1,21 @@
+img{
+    width: 225px;
+    height: 230px;
+    border-radius: 50%;
+    margin-left: 120px;
+
+}
+label,h3{
+    margin-left: 173px;
+}
+.box{
+    width: 425px;
+    height: 330px;
+    background-color: rgb(149, 148, 148);
+    margin-left: 120px;
+    border-radius: 15px;
+}
+.m{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
