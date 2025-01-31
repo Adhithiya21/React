@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Form, Route, Routes } from 'react-router-dom';
 import New from './New';
 import Second from './Second';
 
@@ -21,6 +20,19 @@ import ToggleButton from './ToggleButton';
 import Fetch from './Fetch';
 import Weather from './Weather';
 import RotatingCloud from './Rotaitingcloud';
+import { Fetchdata } from './Moveisearchapp';
+import Detail from './Detail';
+import Themeprovider from './Context/Themeprovider';
+import Football from './Context/Football';
+import { LanguageProvider } from './Context/LanguageContext';
+import LanguageSwitcher from './Context/LanguageSwitcher';
+import Content from './Context/Content';
+import Switch from './Context/Switch';
+import UserLogin from './Context/Function';
+import Main from './rendering/Main';
+import Admin from './rendering/Admin';
+import Mmain from './rendering/Mmain';
+import Check from './rendering/Check';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,11 +50,20 @@ root.render(
     <Route path='/fetch' element={<Fetch/>}></Route>
     <Route path='/takle' element={<Weather/>}></Route>
     <Route path='/temp' element={<RotatingCloud/>}></Route>
+    <Route path='/see' element={<Fetchdata/>}></Route>
+    <Route path='/wee/:id' element={<Detail/>}></Route>
+    <Route path='/allin' element={<Form/>}></Route>
+    <Route path="/uu" element={<UserLogin />} />
+    <Route path="/render" element={<Main />} />
+    <Route path="/ii" element={< Check/>} />
+
+
 
 
 
     </Routes>
     </BrowserRouter>
+       
   </React.StrictMode>
 );
 
